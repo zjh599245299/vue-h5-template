@@ -1,22 +1,23 @@
 <template>
   <div>
     <van-tabbar fixed route>
-      <van-tabbar-item to="/" icon="home-o">
-        首页
+      <van-tabbar-item to="/" icon="shop-o">
+        商城
       </van-tabbar-item>
-      <van-tabbar-item to="/about" icon="user-o">
-        关于我
+      <van-tabbar-item to="/categories" icon="apps-o">
+        分类
       </van-tabbar-item>
-      </van-tabbar>
-   <!--  <van-tabbar fixed v-model="active" @change="onChange">
-      <van-tabbar-item  to="/home" icon="home-o">首页</van-tabbar-item>
-      <van-tabbar-item  to="/about" icon="user-o">关于我</van-tabbar-item>
-    </van-tabbar> -->
+      <van-tabbar-item to="/cart" icon="shopping-cart-o">
+        购物车
+      </van-tabbar-item>
+      <van-tabbar-item to="/vip" icon="vip-card-o">
+        我的
+      </van-tabbar-item>
+    </van-tabbar>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'TabBar',
   data() {
@@ -24,9 +25,7 @@ export default {
       active: 0
     }
   },
-  methods: {
-  
-  }
+  methods: {}
 }
 </script>
 
